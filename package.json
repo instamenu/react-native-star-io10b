@@ -43,5 +43,17 @@
   },
   "dependencies": {
     "@expo/config-plugins": "^4.0.16"
-  }
+  },
+  "files": [
+    "android",
+    "docs",
+    "ios",
+    "src",
+    "app.plugin.js",
+    "index.ts",
+    "index.d.ts",
+    "react-native-star-io10.podspec",
+    "tsconfig.json",
+    "yarn.lock"
+  ]
 }
