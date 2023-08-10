@@ -928,9 +928,9 @@ class StarIO10ValueConverter {
                 val client = OkHttpClient()
                 val request = Request.Builder().url(uri).build()
                 val response = client.newCall(request).execute()
-                response.body?.bytes()?.let { responseBytes ->
+                response.body()?.bytes()?.let { responseBytes ->
                     bytes = responseBytes
-                    response.body?.close()
+                    response.body()?.close()
                 }
             } catch (e: Exception){}
 
